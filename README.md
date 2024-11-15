@@ -13,7 +13,7 @@ or have trouble following a data type to its destination:
 Then this guide should help clear that up for you.
 
 ## How To Read This Guide
-There are several directories listed here. Starting from **0** and going on, they increase in
+There are several directories listed here. Starting from **CH0** and going on, they increase in
 complexity as the directory number increases.
 
 Included in each directory are:
