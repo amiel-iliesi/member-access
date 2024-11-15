@@ -11,6 +11,7 @@ done wonders for me when it comes to learning new files. I never leave home with
 it :)
 * https://vimdoc.sourceforge.net/htmldoc/windows.html
 Here is an example:
+
 ![vim Window splitting](./figures/windows\ in\ Vim.png)
 
 ## How to Even Begin
