@@ -10,6 +10,7 @@ If you're using **Vim**, you should consider learning about "windows". They have
 done wonders for me when it comes to learning new files. I never leave home without
 it :)
 * https://vimdoc.sourceforge.net/htmldoc/windows.html
+
 Here is an example:
 
 ![vim Window splitting](./figures/windows%20in%20Vim.png)
