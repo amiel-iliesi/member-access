@@ -41,20 +41,20 @@ going forward:
 It looks like the purpose of these files is to work with fractions! And it looks
 like they can be added and outputted already. Just with this short observation we
 learned a lot of what the program is about, and what it is capable of. We can now look
-at [main.cpp](main.cpp) and start putting the pieces together.
+at [main.cpp](./reference%20files/main.cpp) and start putting the pieces together.
 
-## 1b: [main.cpp](main.cpp)
-[main.cpp](main.cpp) seems to have very little in it so far, but we can still make a few
+## 1b: [main.cpp](./reference%20files/main.cpp)
+[main.cpp](./reference%20files/main.cpp) seems to have very little in it so far, but we can still make a few
 observations before we proceed, like how the user is expected to interact with these
 fractions, syntax and the like.
 
-## 2: [fraction.h](fraction.h)
-Next stop: [fraction.h](fraction.h). Header files (in general) are like our table of contents,
+## 2: [fraction.h](./reference%20files/fraction.h)
+Next stop: [fraction.h](./reference%20files/fraction.h). Header files (in general) are like our table of contents,
 and is the case for the `Fraction` class. Before we look at any implementations *ever*,
 it's a great idea to get a birds-eye view of what a class is capable of before we look
 at implementations for specific functions or details.
 
-Please open up the [fraction.h](fraction.h) file and study it closely before coming back, and
+Please open up the [fraction.h](./reference%20files/fraction.h) file and study it closely before coming back, and
 please hold off going to look at implementations for now. The benefits of this
 slow-forward approach will soon become clear.
 
@@ -76,10 +76,10 @@ We know what functions it currently supports:
 
 After considering all of these things, we have a pretty good overview about what this
 class is currently capable of, as well as how we are expected to interact with it.
-With this, we can confidently proceed to the implementation in [fraction.cpp](fraction.cpp) and
+With this, we can confidently proceed to the implementation in [fraction.cpp](./reference%20files/fraction.cpp) and
 understand what we're looking *at*, and looking *for*.
 
-## 3: [fraction.cpp](fraction.cpp)
+## 3: [fraction.cpp](./reference%20files/fraction.cpp)
 This is where all of the magic happens, and now that we've put in the work to
 understand the structure, we can look at any details we're curious about without
 feeling lost.
@@ -87,14 +87,14 @@ feeling lost.
 We can begin to understand the class a bit more deeply if we track some behavior we've
 previously observed and try to follow it through the program.
 
-For example, if we try to understand how the adding works in [main.cpp](main.cpp), lets look
+For example, if we try to understand how the adding works in [main.cpp](./reference%20files/main.cpp), lets look
 at the outermost function call. I will keep running track of the path we came from
 as we go in this example, but this will be left as an exercise for subsequent
 examples.
 
 ## 3a: Adding Fractions
-First, we look in [main.cpp](main.cpp) to identify where we want to start looking. We see the
-following in [main.cpp](main.cpp):
+First, we look in [main.cpp](./reference%20files/main.cpp) to identify where we want to start looking. We see the
+following in [main.cpp](./reference%20files/main.cpp):
 ```cpp
 f1 + f2
 ```
@@ -148,7 +148,7 @@ two fractions together, then this function seems to make complete sense!
 
 ## 3b: The Other Half After Adding
 Let's go now towards the bottom of this function where we have a few calls that
-appear to be without context. We can recall from [fraction.h](fraction.h) that `reduce()` and
+appear to be without context. We can recall from [fraction.h](./reference%20files/fraction.h) that `reduce()` and
 `normalize()` were commented/categorized as aesthetic/prettify functions, which might
 start to give us an idea of what they do.
 
