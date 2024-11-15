@@ -12,7 +12,7 @@ it :)
 * https://vimdoc.sourceforge.net/htmldoc/windows.html
 Here is an example:
 
-![vim Window splitting](./figures/windows\ in\ Vim.png)
+![vim Window splitting](./figures/windows%20in%20Vim.png)
 
 ## How to Even Begin
 For this first set of files, we have a bit of a mess to deal with. If we open our
