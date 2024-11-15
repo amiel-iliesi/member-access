@@ -49,10 +49,10 @@ observations before we proceed, like how the user is expected to interact with t
 fractions, syntax and the like.
 
 ## 2: `"fraction.h"`
-Next stop: `"fraction.h"`. Header file are like our table of contents for the
-`Fraction` class. Before we look at any implementations ever, it's great to get
-a birds-eye view of what a class is capable of before we look at implementations
-for specific functions or details.
+Next stop: `"fraction.h"`. Header files (in general) are like our table of contents,
+and is the case for the `Fraction` class. Before we look at any implementations *ever*,
+it's a great idea to get a birds-eye view of what a class is capable of before we look
+at implementations for specific functions or details.
 
 Please open up the `"fraction.h"` file and study it closely before coming back, and
 please hold off going to look at implementations for now. The benefits of this
@@ -61,7 +61,7 @@ slow-forward approach will soon become clear.
 ...
 
 OK, welcome back! What can we know about this class, by looking at the header, and
-header only?
+header *only*?
 
 We know what data each fraction is keeping track of:
 - an integer numerator
@@ -92,7 +92,7 @@ at the outermost function call. I will keep running track of the path we came fr
 as we go in this example, but this will be left as an exercise for subsequent
 examples.
 
-# 3a: Adding Fractions
+## 3a: Adding Fractions
 First, we look in `"main.cpp"` to identify where we want to start looking. We see the
 following in `"main.cpp"`:
 ```cpp
@@ -146,6 +146,7 @@ math being done right below.
 If you can convince yourself about the math being done being the correct way to add
 two fractions together, then this function seems to make complete sense!
 
+## 3b: The Other Half After Adding
 Let's go now towards the bottom of this function where we have a few calls that
 appear to be without context. We can recall from `"fraction.h"` that `reduce()` and
 `normalize()` were commented/categorized as aesthetic/prettify functions, which might
@@ -155,9 +156,10 @@ Reduce seems to make enough sense on it's own; it is clear enough by name alone.
 for now we will skip it, but definitely follow the chain of calls yourself if you
 are curious! There is some interesting work going on there.
 
---but `normalize()` seems a bit less clear, so let's see what that does.
+—but `normalize()` seems a bit less clear, so let's see what that does.
 
 ...
+
 We are currently here now:
 ```
 adding in main (`f1 + f2`)
@@ -186,7 +188,7 @@ void Fraction::normalize()
 
 It looks like it it's taking different forms of fractions (like a negative over a
 negative), and converting them into the more common forms. That makes sense,
-considering the category that this function was in, in the header file!
+considering the category that this function was in—in the header file!
 
 Lets have an overview of how we got here, all the way through the function calls:
 ```
@@ -200,8 +202,9 @@ adding in main (`f1 + f2`)
 ```
 
 Following it this way, it seems to make a whole lot of sense! And we weren't
-overwhelmed at the end of it. We just took small steps forward, and now we understand
-this file and project as a whole!
+overwhelmed at the end of it. We just took small steps forward, and just by following a simple
+step-by-step path through the files, we ended up understanding each individual piece, and now
+the project as a whole!
 
 ## Next Steps
 We will be looking at different files working together, as well as member access.
